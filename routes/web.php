@@ -1,6 +1,8 @@
 <?php
 
+use App\Models\Fibonacci;
 use Illuminate\Support\Facades\Route;
+use Monolog\Handler\RotatingFileHandler;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,3 +18,10 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/fibonacci', function(){
+    return view('fibonacci');
+});
+
+Route::get('/fibonacci', "FibonacciController@create");
+Route::post('/fibonacci', "FibonacciController@index")->name('resultado');
