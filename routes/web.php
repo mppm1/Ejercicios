@@ -16,3 +16,11 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+
+Route::get('/factorial',function(){
+    return view('factorial');
+});
+
+Route::get('/factorial', "FactorialController@create");
+Route::post('/factorial', "FactorialController@index")->name('resultado');
