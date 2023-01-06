@@ -23,12 +23,14 @@ html, body {
         text-align:center;
         font-size: 60px;
         font-family: 'Lobster', cursive;
-        position: fixed;
-        position: relative;top: 10px; left: 300px;
+        position: absolute;
+        position: relative;left: 550px;
             }
 
     .todo{
         display: flex;
+        position: relative; top: 180px;
+        position: fixed;
     }
 
     .informacion{
@@ -63,7 +65,8 @@ html, body {
      }
      #resultado1{
         font-size: 30px;
-        position: relative; right:110px;top:350px;
+        position: relative; right:250px;top:530px;
+        position: fixed;
      }
 
 </style>

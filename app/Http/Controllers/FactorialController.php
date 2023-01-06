@@ -27,7 +27,6 @@ class FactorialController extends Controller
 
          $suma = array_sum($arreglo);
 
-
         return view('factorial', compact('factorial','suma'));
     }
 }
