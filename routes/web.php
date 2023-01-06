@@ -16,3 +16,10 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/Palindromo', function(){
+    return view('Palindromo');
+});
+
+Route::get('/Palindromo', "PalindromoController@create");
+Route::post('/Palindromo', "PalindromoController@index")->name('resultado');
