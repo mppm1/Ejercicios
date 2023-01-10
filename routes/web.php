@@ -1,6 +1,8 @@
 <?php
 
+use App\Http\Controllers\RecursividadController;
 use Illuminate\Support\Facades\Route;
+use Monolog\Handler\RotatingFileHandler;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,3 +18,11 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('recursividad', function(){
+    return view('recursividad');
+});
+
+Route::get('/recursividad', "RecursividadController@create");
+Route::post('/recursividad', "RecursividadController@index")->name('resultado');
+
