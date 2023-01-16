@@ -23,7 +23,8 @@
 
       .informacion{
         font-size: 30px;
-        position: relative; left: 500px;top:200px;
+        position: relative; right:480px;bottom:400px;
+        position: fixed;
             }
     .informacion .numero{
         border-radius: 20px;
@@ -31,7 +32,7 @@
         height:30px;
     }
     .boton{
-        position: relative;left: 300px; top:300px;
+        position: relative;left:470px; top:280px;
         border-radius: 20px;
         width: 150px;
         height: 35px;
@@ -42,7 +43,7 @@
      }
      #resultado{
         font-size: 30px;
-        position: relative; left:1070px;top:530px;
+        position: relative; left:1000px;top:530px;
         position: fixed;
      }
 
