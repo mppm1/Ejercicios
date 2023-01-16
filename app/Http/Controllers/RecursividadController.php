@@ -17,11 +17,8 @@ class RecursividadController extends Controller
     }
 
     public function factorial($numero){
-        if($numero>0){
-            $resultado = $numero * $this->factorial($numero -1);
-        }else{
-            $resultado=1;
-        }
+        //Operador Ternario
+        $resultado = $numero>0 ? $numero*factorial($numero-1) : $resultado = 1;
         return $resultado;
     }
 }
