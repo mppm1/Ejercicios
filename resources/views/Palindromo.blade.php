@@ -34,8 +34,9 @@ html, body {
     }
 
     .imagen{
-        position: relative;bottom:50px;right:200px;
-    }
+        position: relative;bottom:180px;right:200px;
+        position: fixed;
+}
 
     .informacion{
         font-size: 30px;
@@ -60,9 +61,10 @@ html, body {
     }
 
     .respuesta{
-        position: relative;right:400px; top:300px;
+        position: relative;left:350px; top:530px;
         font-size: 30px;
         font-family: 'Lobster', cursive;
+        position: fixed;
     }
 
 </style>
@@ -80,12 +82,8 @@ html, body {
                 <button type="submit" class="boton">Calcular</button><br>
             </div>
             <div class="respuesta">
-            @isset($palabra, $palabra1)
-            @if ($palabra==$palabra1)
-            {{"Su palabra es palíndroma"}}
-            @else
-            {{"Su palabra no es palíndroma"}}
-            @endif
+            @isset($respuesta)
+            <label id="resultado">Su palabra es: {{$respuesta}}</label>
             @endisset
             </div>
         </form>

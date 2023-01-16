@@ -13,7 +13,12 @@ class PalindromoController extends Controller
     public function index(Request $request){
         $palabra = $request->palabra;
         $palindromo=strrev($palabra);
-        return view('Palindromo',['palabra'=>$palabra],['palabra1'=>$palindromo]);
+        if ($palabra==$palindromo) {
+            $respuesta="Palíndroma";
+        }else {
+            $respuesta="No Palíndroma";
+        }
+        return view('Palindromo', compact('respuesta'));
 
     }//Cierre de la Funcion.
 }
