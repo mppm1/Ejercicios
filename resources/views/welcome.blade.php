@@ -11,26 +11,23 @@
 
         <!-- Styles -->
         <style>
-
             body{
                 position: fixed;
             }
             h1{
              text-align:center;
                 font-size: 80px;
-                position: relative;top: 10px; left:250px;
+                position: relative;top: 10px; left:200px;
                 font-family: 'Lobster', cursive;
             }
             .todo{
                 display: flex;
             }
-
             .imagen{
                 position: relative;padding-top:40px;
                 position: relative;padding-left: 350px;
                 border-radius: 25px;
             }
-
             .opciones > a{
                 color: #Fa9B9B;
                 padding: 0 25px;
@@ -47,7 +44,6 @@
                 position:relative;left:100px;top:200px;
                 cursor: pointer;
             }
-
             .opciones > a:hover{
                 background:#Fa9B9B;
                 color: #ffffff;
@@ -66,8 +62,9 @@
 
         <div class="opciones">
             <a href="fibonacci">Serie de Fibonacci</a><br>
-            <a href="">Ejercicio 2</a><br>
-            <a href="">Ejercicio 3</a>
+            <a href="factorial">Factoriales</a><br>
+            <a href="Palindromo">Palindromo</a><br>
+            <a href="recursividad">Factorial(Recursividad)</a>
         </div>
 </div>
     </body>

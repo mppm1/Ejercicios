@@ -56,7 +56,8 @@
 
      #resultado{
         font-size: 30px;
-        position: relative; left: 170px;top: 180px;
+        position: relative; left:420px;top:500px;
+        position: fixed;
      }
 </style>
 <body>
@@ -66,13 +67,16 @@
         @csrf
         <div class="requerido">
             <label for="">Ingresa la cantidad de resultados que deseas ver</label><br>
-            <input type="number" class="numero" name="numero" id="numero">
+            <input type="number" class="numero" name="numero" id="numero" required>
         </div>
         <button type="submit" class="boton">Calcular</button><br>
 
+         <div class="resultado">
         @if (isset($resultado))
         <label id="resultado">Resultado: {{$resultado}}</label>
         @endif
+            </div>
+
     </form>
     <div class="imagen"><img src="{{asset("storage/img/imagen.png")}}"alt=""></div>
 </div>
