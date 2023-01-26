@@ -20,37 +20,51 @@
         font-size: 50px;
     }
 
-    button{
+    .Boton{
+        font-family: Quicksand;
+        font-size: 22px;
+        width: 100px;
+        height: 50px;
+        border-radius: 20px;
+        position: relative;bottom:20px;
+        background: #2aebbadc;
+        border-color: #13b3e4;
+        border-width: 3px;
+        cursor: pointer;
+    }
+
+   .todo #botones button{
+       cursor: pointer;
         width: 300px;
         height: 300px;
         margin: 15px;
         border-radius: 20px;
         border-color: rgb(255, 255, 255);
         border-width: 3px;
-        cursor: pointer;
     }
 
-    button:hover{
-        width: 305px;
-        height: 305px;
-        border-color:#000000;
-    }
-
-    #Rojo{
+    .Rojo{
         background-color: rgba(240, 28, 28, 0.925);
+    } button:active .Rojo{
+        box-shadow:0px 0px 80px rgba(240, , 28, 0.925);
     }
 
-    #Azul{
+    .Azul{
         background-color: rgb(0, 217, 255);
+    }button:active .Azul{
+        box-shadow:0px 0px 80px rgb(0, 217, 255);
     }
 
-    #Amarillo{
+    .Amarillo{
         background-color: rgb(255, 255, 1);
+    }button:active .Amarillo{
+        box-shadow:0px 0px 80px rgb(255, 255, 1);
     }
 
-    #Verde{
+    .Verde{
         background-color: rgb(3, 250, 3);
-    }
+    }button:active .Verde{
+        box-shadow:0px 0px 80px rgb(3, 250, 3);}
 
     .todo{
         display: flex;
@@ -58,27 +72,26 @@
     }
 
     .imagen{
-        padding-top: 30px;
-        padding-left: 30px;
+        padding-bottom:40px;
+        padding-left: 710px;
+        position: fixed;
     }
 
-    .juego{
-        padding-right: 30px;
-    }
 </style>
 
 <body>
-    <h1 id="titulo">Presiona una tecla para empezar</h1>
+    <h1 id="titulo">Juego Simón Dice</h1>
+    <button class="Boton" href="{{ route('secuencia') }}">Iniciar</button>
 
 <div class="todo">
 
-    <div class="juego">
-    <button id="Rojo" class="active"></button>
-    <button id="Azul" class="active"></button>
-    <br><br>
-    <button id="Amarillo" class="active"></button>
-    <button id="Verde" class="active"></button>
-    </div>
+        <div id="botones">
+            <button class="Rojo"></button>
+            <button class="Azul"></button>
+            <br><br>
+            <button class="Amarillo"></button>
+            <button class="Verde"></button>
+        </div>
 
     <div class="imagen">
         <img src="{{asset("storage/img/imagen5.png")}}"alt="">
@@ -86,5 +99,18 @@
 
 </div>
 
+<script>
+
+    var botones = document.querySelectorAll("#botones button");
+    for (var i = 0; i < botones.length; i++) {
+    botones[i].addEventListener("click", function() {
+
+        
+
+        }
+    }
+
+
+</script>
 </body>
 </html>

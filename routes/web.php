@@ -20,3 +20,5 @@ Route::get('/', function () {
 Route::get('/SimonDice', function(){
     return view('SimonDice');
 });
+
+Route::get('/SimonDice', "SimonController@create");
