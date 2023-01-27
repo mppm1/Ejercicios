@@ -103,9 +103,9 @@
 
     var botones = document.querySelectorAll("#botones button");
     for (var i = 0; i < botones.length; i++) {
-    botones[i].addEventListener("click", function() {
+    botones[i].addEventListener("click", function()) {
 
-        
+
 
         }
     }
