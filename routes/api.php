@@ -8,9 +8,5 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::get('/SimonDice', function(){
-    return view('SimonDice');
-});
-
-Route::get('/SimonDice/secuencia', 'SimonController@mostrarSecuencia')->name('secuencia');
+Route::get('/SimonDice', 'SimonController@index');
 

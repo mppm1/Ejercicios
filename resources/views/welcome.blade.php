@@ -41,7 +41,7 @@
                 border-style: solid;
                 border-radius: 10px;
                 display:block;
-                position:relative;left:100px;top:200px;
+                position:relative;left:100px;top:100px;
                 cursor: pointer;
             }
             .opciones > a:hover{
@@ -65,7 +65,8 @@
             <a href="factorial">Factoriales</a><br>
             <a href="Palindromo">Palindromo</a><br>
             <a href="recursividad">Factorial(Recursividad)</a><br>
-            <a href="SimonDice">Simón Dice</a>
+            <a href=>Simón Dice</a><br>
+            <a href="Calculadora">Calculadora</a>
         </div>
 </div>
     </body>

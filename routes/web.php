@@ -16,9 +16,3 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
-
-Route::get('/SimonDice', function(){
-    return view('SimonDice');
-});
-
-Route::get('/SimonDice', "SimonController@create");

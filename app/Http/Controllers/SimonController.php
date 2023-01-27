@@ -7,20 +7,20 @@ use Illuminate\Support\Arr;
 
 class SimonController extends Controller
 {
-    public function create(){
+    public function index(){
         return view('SimonDice');
     }
 
-    public function mostrarSecuencia(){
-        $colores = array("Rojo", "Azul", "Amarillo", "Verde");
-        $color_random = $colores[rand(0,3)];
+    // public function mostrarSecuencia(){
+    //     $colores = array("Rojo", "Azul", "Amarillo", "Verde");
+    //     $color_random = $colores[rand(0,3)];
 
-            for ($i = 0; $i < 1; $i++) {
-                $color_random = $colores[rand(0,3)];
-                echo $color_random . "<br>";
-            }
+    //         for ($i = 0; $i < 1; $i++) {
+    //             $color_random = $colores[rand(0,3)];
+    //             echo $color_random . "<br>";
+    //         }
 
-        return view('SimonDice');
-    }
+    //     return view('SimonDice');
+    // }
 
 }
